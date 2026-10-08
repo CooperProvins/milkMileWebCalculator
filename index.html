@@ -15,11 +15,10 @@
   <button onclick="myFunc()">
     Calculate
   </button>
-	<p id="result">At the end of the race you will be x% milk by weight!</p>
+	<p id="result"></p>
   <script>
 		function myFunc(){
-			console.log("hi");
-      document.getElementById("result").innerHTML = "Hello";
+      document.getElementById("result").innerHTML = "At the end of the race you will be " + document.getElementById("weightInput").value + "% milk by weight!";
     }
   </script>
 
