@@ -18,7 +18,8 @@
 	<p id="result"></p>
   <script>
 		function myFunc(){
-      document.getElementById("result").innerHTML = "At the end of the race you will be " + document.getElementById("weightInput").value + "% milk by weight!";
+const percent = 3/(document.getElementById("weightInput").value+3)
+      document.getElementById("result").innerHTML = "At the end of the race you will be " + percent + "% milk by weight!";
     }
   </script>
 
