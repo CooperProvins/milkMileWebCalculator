@@ -1,1 +1,25 @@
-
+#inputDiv {
+    display: flex;
+    border: 2px solid black;
+    justify-content: center;
+    align-items: center;
+    max-width: 15rem;
+    flex-direction: column;
+    background-color: #d9d9d9;
+    margin-inline: auto;
+}
+.inInputDiv {
+    margin: 1rem;
+}
+#result {
+    text-align: center;
+    border: 2px solid black;
+    max-width: 13rem;
+    padding: 1rem;
+    background-color: #d9d9d9;
+    margin-inline: auto;
+}
+button {
+    margin: 0.5rem;
+    padding: 0.25rem;
+}

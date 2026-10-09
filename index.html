@@ -2,26 +2,32 @@
 <html lang="en">
 
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <link rel="stylesheet" href="style.css" />
-  <title>Milk Calculator</title>
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <link rel="stylesheet" href="style.css"/>
+    <title>Milk Calculator</title>
 </head>
-  <body>
-	<p>Enter Weight (lbs)</p>
+<body>
+<div id="inputDiv">
+    <p class="inInputDiv">Enter Weight (lbs)</p>
 
-  <input type="number" id="weightInput"></input>
-    
-  <button onclick="myFunc()">
-    Calculate
-  </button>
-	<p id="result"></p>
-  <script>
-		function myFunc(){
-const percent = 100*3.24/(parseFloat(document.getElementById("weightInput").value)+3.24)
-      document.getElementById("result").innerHTML = "At the end of the race you will be " + Math.round(percent*10)/10 + "% milk by weight!";
+    <input type="number" id="weightInput" class="inInputDiv">
+
+    <button onclick="myFunc()" class="inInputDiv">
+        Calculate
+    </button>
+</div>
+<p id="result">What percent of you is milk?</p>
+<script>
+    function myFunc() {
+        const weight = parseFloat(document.getElementById("weightInput").value);
+        if (weight<= 0){
+          return;
+        }
+        const percent = 100 * 3.24 / (parseFloat(document.getElementById("weightInput").value) + 3.24)
+        document.getElementById("result").innerHTML = "By the end of the race you will be " + Math.round(percent * 10) / 10 + "% milk by weight!";
     }
-  </script>
+</script>
 
 </body>
 
