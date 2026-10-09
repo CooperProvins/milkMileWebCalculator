@@ -6,6 +6,13 @@ body {
 
     animation: moveBackground 10s linear infinite;
 }
+#statsDiv {
+    margin-top: 3rem;
+}
+#statsGrid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
 #inputDiv {
     display: flex;
     border: 2px solid black;
