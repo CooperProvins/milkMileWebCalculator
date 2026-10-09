@@ -5,30 +5,21 @@
     <meta charset="UTF-8"/>
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <link rel="stylesheet" href="style.css"/>
+    <script src="index.js"></script>
     <title>Milk Calculator</title>
 </head>
 <body>
 <div id="inputDiv">
     <p class="inInputDiv">Enter Weight (lbs)</p>
 
-    <input type="number" id="weightInput" class="inInputDiv">
+    <input type="number" id="weightInput" class="inInputDiv" min="0" max="300" step="1">
 
     <button onclick="myFunc()" class="inInputDiv">
         Calculate
     </button>
 </div>
-<p id="result">What percent of you is milk?</p>
-<script>
-    function myFunc() {
-        const weight = parseFloat(document.getElementById("weightInput").value);
-        if (weight<= 0){
-          return;
-        }
-        const percent = 100 * 3.24 / (parseFloat(document.getElementById("weightInput").value) + 3.24)
-        document.getElementById("result").innerHTML = "By the end of the race you will be " + Math.round(percent * 10) / 10 + "% milk by weight!";
-    }
-</script>
-
+<p class="textDiv">What percent of you is milk?</p>
+<p class="textDiv" id="countdown">Countdown</p>
 </body>
 
 </html>

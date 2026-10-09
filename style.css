@@ -1,17 +1,26 @@
+body {
+    background-color: #fff9ec;
+    background-image: url("MilkTile.png");
+    background-repeat: repeat;
+    background-size: 200px;
+
+    animation: moveBackground 10s linear infinite;
+}
 #inputDiv {
     display: flex;
     border: 2px solid black;
     justify-content: center;
     align-items: center;
-    max-width: 15rem;
+    max-width: 13rem;
     flex-direction: column;
     background-color: #d9d9d9;
     margin-inline: auto;
+    padding: 1rem;
 }
 .inInputDiv {
-    margin: 1rem;
+    margin: 0.5rem;
 }
-#result {
+.textDiv {
     text-align: center;
     border: 2px solid black;
     max-width: 13rem;
@@ -19,7 +28,22 @@
     background-color: #d9d9d9;
     margin-inline: auto;
 }
+#countdown {
+    position: fixed;
+    bottom: 0px;
+    left: 50%;
+    transform: translateX(-50%);
+}
 button {
     margin: 0.5rem;
     padding: 0.25rem;
+}
+
+@keyframes moveBackground {
+    from {
+        background-position: 0 0;
+    }
+    to {
+        background-position: 200px 200px;
+    }
 }
