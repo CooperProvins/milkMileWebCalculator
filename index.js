@@ -3,7 +3,7 @@ function myFunc() {
     if (isNaN(weight) || weight <= 0 || weight > 300){
         return;
     }
-    const percent = 100 * 3.24 / (parseFloat(document.getElementById("weightInput").value) + 3.24)
+    const percent = 100 * 3.25 / (parseFloat(document.getElementById("weightInput").value) + 3.24)
     document.getElementById("result").innerHTML = "By the end of the race you will be " + Math.round(percent * 10) / 10 + "% milk by weight!";
 }
 

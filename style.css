@@ -33,7 +33,7 @@ body {
     bottom: 0px;
     left: 50%;
     transform: translateX(-50%);
-    max-width: 30rem;
+    width: 30rem;
 }
 .textDiv {
     text-align: center;
