@@ -7,7 +7,6 @@ body {
     animation: moveBackground 10s linear infinite;
 }
 #statsDiv {
-    margin-top: 3rem;
 }
 #statsGrid {
     display: grid;
