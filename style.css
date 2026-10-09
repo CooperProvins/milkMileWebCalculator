@@ -20,6 +20,14 @@ body {
 .inInputDiv {
     margin: 0.5rem;
 }
+#countdown {
+    font-size: 50px;
+    position: fixed;
+    bottom: 0px;
+    left: 50%;
+    transform: translateX(-50%);
+    max-width: 30rem;
+}
 .textDiv {
     text-align: center;
     border: 2px solid black;
@@ -28,15 +36,12 @@ body {
     background-color: #d9d9d9;
     margin-inline: auto;
 }
-#countdown {
-    position: fixed;
-    bottom: 0px;
-    left: 50%;
-    transform: translateX(-50%);
-}
 button {
     margin: 0.5rem;
     padding: 0.25rem;
+}
+input{
+    width: 5rem;
 }
 
 @keyframes moveBackground {
