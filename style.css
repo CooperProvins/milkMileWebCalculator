@@ -44,6 +44,9 @@ body {
     margin-inline: auto;
     margin: 1rem auto;
 }
+div {
+    border-radius: 5px;
+}
 button {
     margin: 0.5rem;
     padding: 0.25rem;
