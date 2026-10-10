@@ -21,6 +21,7 @@ body {
     flex-direction: column;
     background-color: #d9d9d9;
     margin-inline: auto;
+    margin: 1rem auto;
     padding: 1rem;
 }
 .inInputDiv {
@@ -41,6 +42,7 @@ body {
     padding: 1rem;
     background-color: #d9d9d9;
     margin-inline: auto;
+    margin: 1rem auto;
 }
 button {
     margin: 0.5rem;
