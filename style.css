@@ -6,7 +6,18 @@ body {
 
     animation: moveBackground 10s linear infinite;
 }
+main {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 4rem;
+}
 #statsDiv {
+    width: 13rem;
+}
+#result {
+    width: 13rem;
 }
 #statsGrid {
     display: grid;
@@ -17,11 +28,9 @@ body {
     border: 2px solid black;
     justify-content: center;
     align-items: center;
-    max-width: 13rem;
+    width: 13rem;
     flex-direction: column;
     background-color: #d9d9d9;
-    margin-inline: auto;
-    margin: 1rem auto;
     padding: 1rem;
 }
 .inInputDiv {
@@ -33,28 +42,35 @@ body {
     bottom: 0px;
     left: 50%;
     transform: translateX(-50%);
-    width: 30rem;
+    width: min(30rem, 90vw);
 }
-.textDiv {
+.bigDivEnergy {
     text-align: center;
     border: 2px solid black;
-    max-width: 13rem;
     padding: 1rem;
     background-color: #d9d9d9;
-    margin-inline: auto;
-    margin: 1rem auto;
-}
-.roundMe {
     border-radius: 1rem;
 }
 button {
     margin: 0.5rem;
     padding: 0.25rem;
 }
-input{
+input {
     width: 5rem;
 }
-
+#milkMap {
+    max-width: 500px;
+}
+img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin-inline: auto;
+}
+.flexMember {
+    flex: 0 1 auto;
+    /*background-color: rgb(255 0 0 / 0.5);*/
+}
 @keyframes moveBackground {
     from {
         background-position: 0 0;
