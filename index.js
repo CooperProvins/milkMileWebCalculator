@@ -3,13 +3,13 @@ function myFunc() {
     if (isNaN(weight) || weight <= 0 || weight > 300){
         return;
     }
-    const percent = 100 * 3.25 / (weight + 3.24);
+    const percent = 100 * 3.25 / (weight + 3.25);
     const result = document.getElementById("result");
     result.hidden = false;
     result.innerHTML = "By the end of the race you will be " + Math.round(percent * 10) / 10 + "% milk by weight!";
 }
 
-var countdownDate = new Date("Oct 17, 2026, 12:00:00").getTime();
+var countdownDate = new Date("2026-10-17T19:00:00.000Z").getTime();
 var x = setInterval(updateCountdown, 1000);
 
 function updateCountdown() {
