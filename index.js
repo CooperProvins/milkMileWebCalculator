@@ -1,4 +1,4 @@
-function myFunc() {
+function calcPercent() {
     const weight = parseFloat(document.getElementById("weightInput").value);
     if (isNaN(weight) || weight <= 0 || weight > 300){
         return;
