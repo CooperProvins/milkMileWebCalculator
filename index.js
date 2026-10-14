@@ -19,6 +19,7 @@ var x = setInterval(updateCountdown, 1000);
 const rosterList = document.getElementByID("rosterList");
 for (const person of rosterArray){
     let personElement = document.createElement("li");
+    personElement.textContent = person;
     rosterList.append(personElement);
 }
 
