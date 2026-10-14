@@ -1,19 +1,29 @@
-function calcPercent() {
-    const weight = parseFloat(document.getElementById("weightInput").value);
-    if (isNaN(weight) || weight <= 0 || weight > 300){
-        return;
-    }
-    const percent = 100 * 3.25 / (weight + 3.25);
-    const result = document.getElementById("result");
-    result.hidden = false;
-    result.innerHTML = "By the end of the race you will be " + Math.round(percent * 10) / 10 + "% milk by weight!";
-}
+const rosterArray = [
+    "Cooper P.",
+    "Jacob O.W.",
+    "Owen B.",
+    "Chandler M.",
+    "Jackson B.",
+    "Theo G.",
+    "Reid M.",
+    "Brandon K.",
+    "Angel G.",
+    "Edgar W.",
+    "Joseph P.",
+    "Axel M."
+];
 
 var countdownDate = new Date("2026-10-17T19:00:00.000Z").getTime();
 var x = setInterval(updateCountdown, 1000);
 
+const rosterList = document.getElementByID("rosterList");
+for (const person of rosterArray){
+    let personElement = document.createElement("li");
+    rosterList.append(personElement);
+}
+
 function updateCountdown() {
-    var now = new Date().getTime();
+    var now = Date.now();
 
     var distance = countdownDate-now;
 
@@ -23,4 +33,15 @@ function updateCountdown() {
     var seconds = Math.floor((distance%(1000*60)) / (1000));
 
     document.getElementById("countdown").innerHTML = days + "d " + hours + "h " + minutes + "m " + seconds + "s";
+}
+
+function calcPercent() {
+    const weight = parseFloat(document.getElementById("weightInput").value);
+    if (isNaN(weight) || weight <= 0 || weight > 300){
+        return;
+    }
+    const percent = 100 * 3.25 / (weight + 3.25);
+    const result = document.getElementById("result");
+    result.hidden = false;
+    result.innerHTML = "By the end of the race you will be " + Math.round(percent * 10) / 10 + "% milk by weight!";
 }
