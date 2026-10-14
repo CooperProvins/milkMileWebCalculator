@@ -16,7 +16,7 @@ const rosterArray = [
 var countdownDate = new Date("2026-10-17T19:00:00.000Z").getTime();
 var x = setInterval(updateCountdown, 1000);
 
-const rosterList = document.getElementByID("rosterList");
+const rosterList = document.getElementById("rosterList");
 for (const person of rosterArray){
     let personElement = document.createElement("li");
     personElement.textContent = person;
