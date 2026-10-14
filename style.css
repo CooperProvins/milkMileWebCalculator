@@ -63,6 +63,12 @@ input {
 #milkMap {
     max-width: 500px;
 }
+li {
+    margin: 0.25rem;
+}
+#rosterDiv {
+    width: 4rem;
+}
 img {
     max-width: 100%;
     height: auto;
