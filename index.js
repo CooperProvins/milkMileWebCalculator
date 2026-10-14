@@ -10,7 +10,8 @@ const rosterArray = [
     "Angel G.",
     "Edgar W.",
     "Joseph P.",
-    "Axel M."
+    "Axel M.",
+    "Marina C."
 ];
 
 var countdownDate = new Date("2026-10-17T19:00:00.000Z").getTime();
