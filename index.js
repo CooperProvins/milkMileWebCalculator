@@ -32,6 +32,8 @@ for (const [milker, assistant] of roster.entries()){
     }
 }
 
+document.getElementById("weightInput").addEventListener('change', calcPercent);
+
 function updateCountdown() {
     var now = Date.now();
 
