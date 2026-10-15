@@ -1,27 +1,35 @@
-const rosterArray = [
-    "Cooper P.",
-    "Jacob O.W.",
-    "Owen B.",
-    "Chandler M.",
-    "Jackson B.",
-    "Theo G.",
-    "Reid M.",
-    "Brandon K.",
-    "Angel G.",
-    "Edgar W.",
-    "Joseph P.",
-    "Axel M.",
-    "Marina C."
-];
-
 var countdownDate = new Date("2026-10-17T19:00:00.000Z").getTime();
 var x = setInterval(updateCountdown, 1000);
+const roster = new Map([
+        ["Cooper P.", null],
+        ["Jacob O.W.", "Imogen C."],
+        ["Owen B.", "Lynn P."],
+        ["Chandler M.", null],
+        ["Jackson B.", "Troy S."],
+        ["Theo G.", null],
+        ["Reid M.", null],
+        ["Brandon K.", "Sam L."],
+        ["Angel G.", null],
+        ["Edgar W.", null],
+        ["Joseph P.", null],
+        ["Axel M.", null],
+        ["Marina C.", null]
+    ]
+)
 
 const rosterList = document.getElementById("rosterList");
-for (const person of rosterArray){
-    let personElement = document.createElement("li");
-    personElement.textContent = person;
-    rosterList.append(personElement);
+for (const [milker, assistant] of roster.entries()){
+    let milkerElement = document.createElement("p");
+    milkerElement.textContent = milker;
+    rosterList.append(milkerElement);
+    if (assistant != null){
+        let assistantElement = document.createElement("p");
+        assistantElement.textContent = assistant;
+        rosterList.append(assistantElement);
+    }
+    else {
+        rosterList.append(document.createElement("p"))
+    }
 }
 
 function updateCountdown() {

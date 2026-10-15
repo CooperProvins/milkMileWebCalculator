@@ -21,9 +21,15 @@ main {
 #result {
     width: 13rem;
 }
-#statsGrid {
+.grid {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
+}
+#rosterList p {
+    margin: 0.25rem 0;
+}
+h2 {
+    margin: 0.25rem;
 }
 #inputDiv {
     display: flex;
@@ -67,7 +73,7 @@ li {
     margin: 0.25rem;
 }
 #rosterDiv {
-    width: 10rem;
+    width: 15rem;
 }
 img {
     max-width: 100%;
