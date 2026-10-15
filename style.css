@@ -16,7 +16,7 @@ main {
     padding-bottom: 6rem;
 }
 #statsDiv {
-    width: 13rem;
+    width: 14rem;
 }
 #result {
     width: 13rem;
@@ -31,6 +31,9 @@ main {
 }
 #rosterList p {
     margin: 0.25rem 0;
+}
+#statsList p {
+    margin: 0.4rem 0;
 }
 h2 {
     margin: 0.25rem;
