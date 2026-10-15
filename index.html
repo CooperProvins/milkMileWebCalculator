@@ -12,12 +12,19 @@
 <body>
     <main>
         <div class="flexMember">
-            <div id="inputDiv" class="bigDivEnergy">
-                <p class="inInputDiv">Enter your weight (lbs)</p>
-
-                <input type="number" id="weightInput" class="inInputDiv" min="0" max="300" step="1">
+            <div class="bigDivEnergy" id="rosterDiv">
+                <h2>Roster</h2>
+                <div class="grid" id="rosterList">
+                    <p><b>Milker</b></p>
+                        <p><b>Assistant</b></p>
+                </div>
             </div>
-            <p class="bigDivEnergy" id="result" hidden></p>
+        </div>
+        <div class="flexMember">
+            <div class="bigDivEnergy" id="milkMap">
+                <h1>Milk Map</h1>
+                <img src="media/MilkMap.png">
+            </div>
         </div>
         <div class="flexMember">
             <div class="bigDivEnergy" id="statsDiv">
@@ -35,19 +42,12 @@
             </div>
         </div>
         <div class="flexMember">
-            <div class="bigDivEnergy" id="milkMap">
-                <h1>Milk Map</h1>
-                <img src="media/MilkMap.png">
+            <div id="inputDiv" class="bigDivEnergy">
+                <p class="inInputDiv">Enter your weight (lbs)</p>
+
+                <input type="number" id="weightInput" class="inInputDiv" min="0" max="300" step="1">
             </div>
-        </div>
-        <div class="flexMember">
-            <div class="bigDivEnergy" id="rosterDiv">
-                <h2>Roster</h2>
-                <div class="grid" id="rosterList">
-                    <p><b>Milker</b></p>
-                        <p><b>Assistant</b></p>
-                </div>
-            </div>
+            <p class="bigDivEnergy" id="result" hidden></p>
         </div>
     </main>
     <p class="bigDivEnergy" id="countdown">#d ##h ##m ##s</p>
