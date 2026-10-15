@@ -23,7 +23,7 @@ main {
 }
 .grid {
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: repeat(3, 1fr);
 }
 #rosterList p {
     margin: 0.25rem 0;
